@@ -244,7 +244,7 @@ sup { top: -.5em; }
 // Links
 
 a {
-  color: $link-color;
+  // color: $link-color;
   text-decoration: $link-decoration;
 
   &:hover {
@@ -289,12 +289,12 @@ pre {
   margin-bottom: 1rem; // 2
   overflow: auto; // 3
   @include font-size($code-font-size);
-  color: $pre-color;
+  // color: $pre-color;
 
   // Account for some code outputs that place code tags in pre tags
   code {
     @include font-size(inherit);
-    color: inherit;
+    // color: inherit;
     word-break: normal;
   }
 }
@@ -306,7 +306,7 @@ code {
 
   // Streamline the style when inside anchors to avoid broken underline and more
   a > & {
-    color: inherit;
+    // color: inherit;
   }
 }
 

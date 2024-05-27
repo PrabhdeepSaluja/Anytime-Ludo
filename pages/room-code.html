@@ -10,6 +10,15 @@
   <title>
     Anytime Ludo
   </title>
+  <style>
+    /* Your CSS styles here */
+    .main-menu {
+      display: none; /* Initially hide the sidebar */
+    }
+    .main-menu.open {
+      display: block; /* Display the sidebar when the 'open' class is added */
+    }
+  </style>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
@@ -20,16 +29,15 @@
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/lib/animate.css">
+	<link rel="stylesheet" href="../assets/css/lib/animate.css">
   <link rel="stylesheet" href="assets/css/lib/slick.css">
-  <link rel="stylesheet" href="../assets/css/custom.css">
+	<link rel="stylesheet" href="../assets/css/custom.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/scss/_header.scss">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/sidebar.css">
   <link rel="stylesheet" href="../assets/css/slicknav.min.css" type="text/css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
@@ -37,7 +45,7 @@
   <div class="main">
     <div class="side-bar">
 
-      <!-- Humberger Begin -->
+    <!-- Humberger Begin -->
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
@@ -62,176 +70,149 @@
     </div>
     <!-- Humberger End -->
 
-      <!-- HEADER -->
-      <header class="navigation" style="padding-bottom: 6px;">
-        <div class="container-fluid">
-            <nav class="navbar justify-content-between align-items-center p-0">
-              <div class="logo-block d-flex align-items-center">
-                <!-- Menu Toggler -->
-                <div class="col-lg-2 col-md-1 col-6 order-md-1 order-1">
-                  <div class="header__humberger">
-                      <i class="fa fa-bars humberger__open"></i>
-                  </div>
+    <!-- HEADER -->
+    <header class="navigation" style="padding-bottom: 6px;">
+      <div class="container-fluid">
+          <nav class="navbar justify-content-between align-items-center p-0">
+            <div class="logo-block d-flex align-items-center">
+              <!-- Menu Toggler -->
+              <div class="col-lg-2 col-md-1 col-6 order-md-1 order-1">
+                <div class="header__humberger">
+                    <i class="fa fa-bars humberger__open"></i>
                 </div>
-                <a class="navbar-brand p-0 m-0" href="index.php">
-                  <picture class="logo">
-                    <img loading="lazy" src="../assets//img/anytimelogo.png" alt="logo" title="logo" height="55" width="55px" />
-                  </picture>
-                </a>
-          </div>
-          
-          <!-- Wallet -->
-          <div class="wallet-block">
-            <div class="col-6 text-end">
-              <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Cash</a>
-            </div>
-  
-            <div class="col-6 text-end">
-              <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Earnings</a>
-            </div>
-          </div>
-  
-        </nav>
+              </div>
+              <a class="navbar-brand p-0 m-0" href="index.php">
+                <picture class="logo">
+                  <img loading="lazy" src="../assets//img/anytimelogo.png" alt="logo" title="logo" height="55" width="55px" />
+                </picture>
+              </a>
         </div>
-      </header>
-  <!-- Tab -->
+        
+        <!-- Wallet -->
+        <div class="wallet-block">
+          <div class="col-6 text-end">
+            <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Cash</a>
+          </div>
+
+          <div class="col-6 text-end">
+            <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Earnings</a>
+          </div>
+        </div>
+
+      </nav>
+      </div>
+    </header>
+    <!-- Tab -->
 
   <section class="game-section bg_img" style="background: url(assets/images/game/bg3.jpg);">
-    <div class="col-lg-12 col-md-6 col-xl-12">
-      <div class="game-details-right">
-          <form id="game" novalidate="novalidate">
-              <h3 class="mb-4 text-center">Create Battle</h3>
-              <div class="form-group">
-                  <div class="input-group mb-3">
-                      <input type="text" name="invest" class="form-control form--control amount-field" placeholder="Enter amount">
-                      <span class="input-group-text text-black text-bold bg--base" id="basic-addon2">Set</span>
-                  </div>
-                  <small class="invest-amount" style="color: white;"><i class="fas fa-info-circle mr-2"></i>Minimum: Rs 100 | Maximum: Rs 1000 |</small>
-              </div>
-          </form>
-      </div>
-    </div>
-  
-    
-    <div class="container mb-4">
-        <div class="row gy-4 justify-content-center">
-          <h3 class="title row justify-content-center">Open Battles</h3>
-          <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6">
-            <div class="row justify-content-center g-4">
-              <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
-                  <!-- <h4 class="text-left">Game Details</h4> -->
-                  <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Challenge From John</p>
-                          <h4 class="title">Rs 250</h4>
-                          <div class="d-flex">
-                              <a href="#0" class="view-btn">Play</a>
-                          </div>
-                      </div>
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Prize</p>
-                          <h4 class="title">Rs 250</h4>
-                      </div>
-                      <div class="dashboard__card-icon">
-                          <i class="fas fa-user"></i>
-                      </div>
-                  </div>
-              </div>
-            </div>
-          
-          </div>
-
-          <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6">
-            <div class="row justify-content-center g-4">
-              <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
-                  <!-- <h4 class="text-left">Game Details</h4> -->
-                  <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Challenge From Steve</p>
-                          <h4 class="title">Rs 250</h4>
-                          <div class="d-flex">
-                              <a href="#0" class="view-btn">Play</a>
-                          </div>
-                      </div>
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Prize</p>
-                          <h4 class="title">Rs 250</h4>
-                      </div>
-                      <div class="dashboard__card-icon">
-                          <i class="fas fa-user"></i>
-                      </div>
-                  </div>
-              </div>
-            </div>
-          
-          </div>
-
-          <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6">
-            <div class="row justify-content-center g-4">
-              <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
-                  <!-- <h4 class="text-left">Game Details</h4> -->
-                  <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Challenge From Mike</p>
-                          <h4 class="title">Rs 250</h4>
-                          <div class="d-flex">
-                              <a href="#0" class="view-btn">Requested</a>
-                              <a href="#0" class="view-btn ml-3">Cancel</a>
-                          </div>
-                      </div>
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Prize</p>
-                          <h4 class="title">Rs 250</h4>
-                      </div>
-                      <div class="dashboard__card-icon">
-                          <i class="fas fa-user"></i>
-                      </div>
-                  </div>
-              </div>
-            </div>
-          
-          </div>
-
-        </div>
-    </div>
-
-    <div class="container mb-4">
-      <div class="row gy-4 justify-content-center mt-4">
-        <h3 class="title row justify-content-center">Running Battles</h3>
-        <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6">
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
           <div class="row justify-content-center g-4">
             <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
-                <div class="dashboard__card">
-                  <h6 class="text-left">Playing For : Rs 100</h6>
-                  <h6 class="text-left">Prize : Rs 200</h6>
-                  <div class="game-item__thumb">
-                    <img class="left-img" src="../assets/img/sport-1.png" height="50px" width="50px" alt="game">
-                    <p class="text-in-between">VS</p>
-                    <img class="right-img" src="../assets/img/sport-1.png" height="50px" width="50px" alt="game">
+                <!-- <h4 class="text-left">Game Details</h4> -->
+                <div class="room-code-card card-body p-3 mt-4">
+                  <div class="row justify-content-center"> 
+                    <div class="col-md-12 mb-md-0 mb-4">
+                      <div class="card card-body card-plain border-radius-lg d-flex justify-content-around align-items-center flex-row"> <!-- Add justify-content-around class -->
+                        <div class="dashboard__card-icon">
+                          <i class="fas fa-user"></i>
+                        </div>
+                        <h4>VS</h4>
+                        <div class="dashboard__card-icon">
+                          <i class="fas fa-user"></i>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
             </div>
-            <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
-              <div class="dashboard__card">
-                <h6 class="text-left">Playing For : Rs 100</h6>
-                <h6 class="text-left">Prize : Rs 200</h6>
-                <div class="game-item__thumb">
-                  <img class="left-img" src="../assets/img/team-empire-esports.png" height="50px" width="50px" alt="game">
-                  <p class="text-in-between">VS</p>
-                  <img class="right-img" src="../assets/img/team-empire-esports.png" height="50px" width="50px" alt="game">
-                </div>
-              </div>
-          </div>
           </div>
         </div>
-
-
       </div>
-  </div>
+    
+    </div>
 
+    <div class="container mb-4 mt-4">
+      <div class="row gy-4 justify-content-center">
+        
+        <div class="col-lg-4 col-xl-12 col-md-6 col-sm-6">
+          
+          <div class="game-item">
+            
+            <div class="game-inner">
+                <div class="game-item__content">
+                  <h6 class="title row justify-content-center">Waiting for Room</h6>
+                </div>
+                <div class="position-absolute top-50 start-50 translate-middle text-white mt-2" id="loadingIcon">
+                  <!-- Insert your loading icon here -->
+                  <!-- For example: -->
+                  <i class="fas fa-spinner fa-spin fa-3x"></i>
+                </div>
+                <div class="game-item__content row align-items-center">
+                  <div class="col-md-8 d-flex align-items-center mt-8">
+                    <h6 class="mb-0">It can take some time</h6>
+                    <i class="fas fa-arrow-right text-white ml-2" aria-hidden="true"></i>
+                  </div>
+                </div>
+              
+            </div>
+            <div class="ball"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-4">
+      <div class="row gy-4 justify-content-center">
+        <div class="game-item__content">
+          <h3 class="title row justify-content-center">Match Status</h3>
+        </div>
+        <div class="col-lg-4 col-xl-12 col-md-6 col-sm-6">
+          <div class="game-item">
+            <div class="game-inner">
+                <div class="game-item__content row d-flex align-items-left">
+                    <div class="col-md-12 mt-3">
+                      <h6>After Completion of your game, select the status of the game and post your screenshot below</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12">
+              <div class="row justify-content-center mt-4">
+                  <div class="col-md-12"> <!-- Adjust col-md-* based on your design -->
+                      <div class="form-group text-center">
+                          <button class="cmn--btn active btn--round" type="submit">I Won</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-xl-12">
+              <div class="row justify-content-center">
+                  <div class="col-md-12"> <!-- Adjust col-md-* based on your design -->
+                      <div class="form-group text-center">
+                          <button class="cmn--btn active btn--round" type="submit">I Lost</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-xl-12">
+              <div class="row justify-content-center">
+                  <div class="col-md-12"> <!-- Adjust col-md-* based on your design -->
+                      <div class="form-group text-center">
+                          <button class="cmn--btn active btn--round" type="submit">Cancel</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="ball"></div>
+        </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- <section -->
+  <section class="game-section py-4 clearfix">
+  </section>
   
   <!-- Footer -->
   
@@ -428,8 +409,6 @@
       },
     });
   </script>
-  
-  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -439,13 +418,26 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
+  <!-- Sidebar toggle -->
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Include jQuery library -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.mobile-toggle').click(function() {
+        $('.main-menu').toggleClass('open'); // Toggle the class to open/close the sidebar
+      });
+    });
+  </script> -->
+  <!-- Github buttons -->
   <script>
     function toggleCustomPagesMenu() {
         var customPagesMenu = document.querySelector('.custom__pages-menu');
         customPagesMenu.classList.toggle('show');
     }
   </script>
-  <!-- Github buttons -->
+    
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>

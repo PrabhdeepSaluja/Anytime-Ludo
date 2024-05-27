@@ -22,22 +22,19 @@
   <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/lib/animate.css">
   <link rel="stylesheet" href="assets/css/lib/slick.css">
-  <link rel="stylesheet" href="../assets/css/custom.css">
+	<link rel="stylesheet" href="../assets/css/custom.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/scss/_header.scss">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/sidebar.css">
   <link rel="stylesheet" href="../assets/css/slicknav.min.css" type="text/css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
  
   <div class="main">
     <div class="side-bar">
-
-      <!-- Humberger Begin -->
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
@@ -45,7 +42,7 @@
         </div>
         <nav>
           <ul>
-            <li><a href="./index.html">Win Cash</a></li>
+            <li><a href="./dashboard.html">Win Cash</a></li>
             <li><a href="./wallet-transaction-new.html">My Wallet</a></li>
             <li><a href="#">Games History</a></li>
             <li><a href="#">Our Battles</a></li>
@@ -62,176 +59,136 @@
     </div>
     <!-- Humberger End -->
 
-      <!-- HEADER -->
-      <header class="navigation" style="padding-bottom: 6px;">
-        <div class="container-fluid">
-            <nav class="navbar justify-content-between align-items-center p-0">
-              <div class="logo-block d-flex align-items-center">
-                <!-- Menu Toggler -->
-                <div class="col-lg-2 col-md-1 col-6 order-md-1 order-1">
-                  <div class="header__humberger">
-                      <i class="fa fa-bars humberger__open"></i>
-                  </div>
+    <!-- HEADER -->
+    <header class="navigation" style="padding-bottom: 6px;">
+      <div class="container-fluid">
+          <nav class="navbar justify-content-between align-items-center p-0">
+            <div class="logo-block d-flex align-items-center">
+              <!-- Menu Toggler -->
+              <div class="col-lg-2 col-md-1 col-6 order-md-1 order-1">
+                <div class="header__humberger">
+                    <i class="fa fa-bars humberger__open"></i>
                 </div>
-                <a class="navbar-brand p-0 m-0" href="index.php">
-                  <picture class="logo">
-                    <img loading="lazy" src="../assets//img/anytimelogo.png" alt="logo" title="logo" height="55" width="55px" />
-                  </picture>
-                </a>
-          </div>
-          
-          <!-- Wallet -->
-          <div class="wallet-block">
-            <div class="col-6 text-end">
-              <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Cash</a>
-            </div>
-  
-            <div class="col-6 text-end">
-              <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Earnings</a>
-            </div>
-          </div>
-  
-        </nav>
+              </div>
+              <a class="navbar-brand p-0 m-0" href="index.php">
+                <picture class="logo">
+                  <img loading="lazy" src="../assets//img/anytimelogo.png" alt="logo" title="logo" height="55" width="55px" />
+                </picture>
+              </a>
         </div>
-      </header>
-  <!-- Tab -->
+        
+        <!-- Wallet -->
+        <div class="wallet-block">
+          <div class="col-6 text-end">
+            <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Cash</a>
+          </div>
 
+          <div class="col-6 text-end">
+            <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Earnings</a>
+          </div>
+        </div>
+
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Tab -->
   <section class="game-section bg_img" style="background: url(assets/images/game/bg3.jpg);">
-    <div class="col-lg-12 col-md-6 col-xl-12">
-      <div class="game-details-right">
-          <form id="game" novalidate="novalidate">
-              <h3 class="mb-4 text-center">Create Battle</h3>
-              <div class="form-group">
-                  <div class="input-group mb-3">
-                      <input type="text" name="invest" class="form-control form--control amount-field" placeholder="Enter amount">
-                      <span class="input-group-text text-black text-bold bg--base" id="basic-addon2">Set</span>
-                  </div>
-                  <small class="invest-amount" style="color: white;"><i class="fas fa-info-circle mr-2"></i>Minimum: Rs 100 | Maximum: Rs 1000 |</small>
-              </div>
-          </form>
-      </div>
-    </div>
-  
-    
     <div class="container mb-4">
+      <h3 class="mb-4 text-center mt-4">Support</h3>
         <div class="row gy-4 justify-content-center">
-          <h3 class="title row justify-content-center">Open Battles</h3>
           <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6">
             <div class="row justify-content-center g-4">
               <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
                   <!-- <h4 class="text-left">Game Details</h4> -->
                   <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Challenge From John</p>
-                          <h4 class="title">Rs 250</h4>
-                          <div class="d-flex">
-                              <a href="#0" class="view-btn">Play</a>
+                    <div class="faq-wrapper row justify-content-between">
+                      <div class="col-lg-12">
+                          <div>
+                            <div class="faq-item__title" onclick="toggleContent(this)">
+                                <h5 class="title">1. Withdrawal Time</h5>
+                            </div>
+                            <div class="faq-item__content" style="display: none;">
+                                <p>Withdrawal time have 1 to 10 minutes. In 1 to 10 minutes money will be send to you bank or upi.</p>
+                            </div>
                           </div>
                       </div>
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Prize</p>
-                          <h4 class="title">Rs 250</h4>
+                    </div>
+                  </div>
+                  <div class="dashboard__card mt-2">
+                    <div class="faq-wrapper row justify-content-between">
+                      <div class="col-lg-12">
+                          <div>
+                            <div class="faq-item__title" onclick="toggleContent(this)">
+                                <h5 class="title">2. Battle Commission</h5>
+                            </div>
+                            <div class="faq-item__content" style="display: none;">
+                                <p>Anytime Ludo charge 5% commission on battle.</p>
+                            </div>
+                          </div>
                       </div>
-                      <div class="dashboard__card-icon">
-                          <i class="fas fa-user"></i>
+                    </div>
+                  </div>
+                  <div class="dashboard__card mt-2">
+                    <div class="faq-wrapper row justify-content-between">
+                      <div class="col-lg-12">
+                          <div>
+                            <div class="faq-item__title" onclick="toggleContent(this)">
+                                <h5 class="title">3. Referral Amount</h5>
+                            </div>
+                            <div class="faq-item__content" style="display: none;">
+                                <p>Refrel amount will be 1% on your referrals winnings.</p>
+                            </div>
+                          </div>
                       </div>
+                    </div>
                   </div>
               </div>
-            </div>
-          
-          </div>
-
-          <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6">
-            <div class="row justify-content-center g-4">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-8 d-flex">
+                    <img src="../assets/img/support.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
               <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
-                  <!-- <h4 class="text-left">Game Details</h4> -->
-                  <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Challenge From Steve</p>
-                          <h4 class="title">Rs 250</h4>
-                          <div class="d-flex">
-                              <a href="#0" class="view-btn">Play</a>
+                <div class="mt-2">
+                  <div class="faq-wrapper row justify-content-between">
+                    <div class="col-lg-12">
+                        <div>
+                          <div class="faq-item__title">
+                              <h5 class="title">Didn't Find What You Were Looking For?</h5>
                           </div>
-                      </div>
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Prize</p>
-                          <h4 class="title">Rs 250</h4>
-                      </div>
-                      <div class="dashboard__card-icon">
-                          <i class="fas fa-user"></i>
-                      </div>
+                        </div>
+                    </div>
                   </div>
-              </div>
-            </div>
-          
-          </div>
-
-          <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6">
-            <div class="row justify-content-center g-4">
-              <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
-                  <!-- <h4 class="text-left">Game Details</h4> -->
-                  <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Challenge From Mike</p>
-                          <h4 class="title">Rs 250</h4>
-                          <div class="d-flex">
-                              <a href="#0" class="view-btn">Requested</a>
-                              <a href="#0" class="view-btn ml-3">Cancel</a>
-                          </div>
-                      </div>
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">Prize</p>
-                          <h4 class="title">Rs 250</h4>
-                      </div>
-                      <div class="dashboard__card-icon">
-                          <i class="fas fa-user"></i>
-                      </div>
+                </div>
+                <div class="dashboard__card d-flex align-items-center">
+                  <div class="dashboard__card-icon" style="height: 50px; width: 50px;">
+                    <i class="fab fa-whatsapp"></i>
                   </div>
-              </div>
+                  <div class="dashboard__card-content text-left ml-4 flex-grow-1">
+                    <h5 class="title mb-0">Chat With Us</h5>  
+                  </div>
+                </div>
+                <div class="dashboard__card d-flex align-items-center mt-3">
+                  <div class="dashboard__card-icon" style="height: 50px; width: 50px;">
+                    <i class="fab fa-telegram"></i>
+                  </div>
+                  <div class="dashboard__card-content text-left ml-4 flex-grow-1">
+                    <h5 class="title mb-0">Join Telegram</h5>  
+                  </div>
+                </div>
+                
+                
             </div>
-          
           </div>
-
         </div>
+        </div>
+        
     </div>
-
-    <div class="container mb-4">
-      <div class="row gy-4 justify-content-center mt-4">
-        <h3 class="title row justify-content-center">Running Battles</h3>
-        <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6">
-          <div class="row justify-content-center g-4">
-            <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
-                <div class="dashboard__card">
-                  <h6 class="text-left">Playing For : Rs 100</h6>
-                  <h6 class="text-left">Prize : Rs 200</h6>
-                  <div class="game-item__thumb">
-                    <img class="left-img" src="../assets/img/sport-1.png" height="50px" width="50px" alt="game">
-                    <p class="text-in-between">VS</p>
-                    <img class="right-img" src="../assets/img/sport-1.png" height="50px" width="50px" alt="game">
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
-              <div class="dashboard__card">
-                <h6 class="text-left">Playing For : Rs 100</h6>
-                <h6 class="text-left">Prize : Rs 200</h6>
-                <div class="game-item__thumb">
-                  <img class="left-img" src="../assets/img/team-empire-esports.png" height="50px" width="50px" alt="game">
-                  <p class="text-in-between">VS</p>
-                  <img class="right-img" src="../assets/img/team-empire-esports.png" height="50px" width="50px" alt="game">
-                </div>
-              </div>
-          </div>
-          </div>
-        </div>
-
-
-      </div>
-  </div>
 
   </section>
-
-  <!-- <section -->
   
   <!-- Footer -->
   
@@ -428,7 +385,6 @@
       },
     });
   </script>
-  
   <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
@@ -445,11 +401,25 @@
         customPagesMenu.classList.toggle('show');
     }
   </script>
+  <script>
+    function toggleContent(titleElement) {
+      // Find the content element associated with the clicked title
+      var contentElement = titleElement.nextElementSibling;
+  
+      // Toggle the display of the content element
+      if (contentElement.style.display === "none") {
+        contentElement.style.display = "block";
+      } else {
+        contentElement.style.display = "none";
+      }
+    }
+  </script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
 </body>
 
 </html>

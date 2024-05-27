@@ -21,6 +21,10 @@
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
 	<link rel="stylesheet" href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery-ui.css">
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
@@ -28,7 +32,7 @@
   <div class="main">
     <div class="side-bar">
       <!-- HEADER -->
-      <header class="navigation" style="padding-bottom: 2px;">
+      <header class="navigation" style="padding-bottom: 6px;">
           <div class="container-fluid">
               <nav class="navbar justify-content-between align-items-center p-0">
                 <div class="logo-block d-flex align-items-center">
@@ -40,13 +44,13 @@
               </div>
                         <a class="navbar-brand p-0 m-0" href="index.php">
                 <picture class="logo">
-                  <img loading="lazy" src="images/anytimelogo.png" alt="logo" title="logo" height="55" width="55px" />
+                  <img loading="lazy" src="../assets//img/anytimelogo.png" alt="logo" title="logo" height="55" width="55px" />
                 </picture>
               </a>
             </div>
             
             <!-- Side Menu -->
-                      <div class="main-menu">
+            <div class="main-menu">
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item profile"> 
                   <a href="profile.php" class="">
@@ -55,8 +59,8 @@
                       <div class="profile-desc">
   
   
-  <h3>Deepak Gautam</h3>
-  <p class="mb-0">8305903023</p>
+                  <h3>Deepak Gautam</h3>
+                  <p class="mb-0">8305903023</p>
   
   
                         
@@ -154,14 +158,15 @@
                 </li>
               </ul>
             </div>
+
                                 <!-- Wallet -->
             <div class="wallet-block">
               <div class="col-6 text-end">
-                <a class="btn bg-gradient-dark mb-0" href="javascript:;"><i class="fas fa-plus"></i>Add Cash</a>
+                <a class="btn bg-gradient-dark mb-0" style="height:40px; margin-right: 8px;" href="javascript:;">Cash</a>
               </div>
 
               <div class="col-6 text-end">
-                <a class="btn bg-gradient-dark mb-0" href="javascript:;"><i class="fas fa-plus"></i>Earnings</a>
+                <a class="btn bg-gradient-dark mb-0" style="height:40px; margin-right: 8px;" href="javascript:;">Earnings</a>
               </div>
             </div>
 
@@ -169,99 +174,98 @@
           </div>
       </header>
   <!-- Tab -->
-  <section class="welcome-sect py-4 clearfix">
-    
-    <div class="container-fluid">
-      <div class="section-title">
-        <h4 class="semi">Our Games</h4>
-        <div class="alert alert-danger " id="snackbar" style="display:none;"></div>
-      </div>
-  
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <a class="btn bg-gradient-primary mt-4 w-100" href="" type="button">Chat With Us</a>
-          </div>
-        </div>
-      </div>
-      
 
-      <div class="row g-3 mb-4">
-        <div class="col-xl-6 mb-xl-0 mb-4 mt-5">
-          <div class="card bg-transparent shadow-xl">
-            <div class="overflow-hidden position-relative border-radius-xl" style="background-image: url('../assets/img/curved-images/curved14.jpg');">
-              <span class="mask bg-gradient-dark"></span>
-              <div class="card-body position-relative z-index-1 p-3">
-                <i class="fas fa-wifi text-white p-2"></i>
-                <div class="d-flex pt-5">
-                  <div class="d-flex">
-                    <div class="me-4">
-                      <h6 class="text-white mb-0">Ludo Classic</h6>
+  <section class="finished-tournaments">
+    <div class="overlay pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="con-lg-8">
+                    <div class="section-text text-center">
+                        <h2 class="title">Finished Tournaments</h2>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-xl-6 mb-xl-0 mb-4 mt-5">
-          <div class="card bg-transparent shadow-xl">
-            <div class="overflow-hidden position-relative border-radius-xl" style="background-image: url('../assets/img/curved-images/curved14.jpg');">
-              <span class="mask bg-gradient-dark"></span>
-              <div class="card-body position-relative z-index-1 p-3">
-                <i class="fas fa-wifi text-white p-2"></i>
-                <div class="d-flex pt-5">
-                  <div class="d-flex">
-                    <div class="me-4">
-                      <h6 class="text-white mb-0">Ludo Classic</h6>
+            <div class="row cus-mar">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="single-box">
+                        <div class="img-area">
+                            <img src="assets/images/finished-tournaments-img-1.png" alt="image">
+                            <div class="abs-area">
+                                <span class="mdr">Finished</span>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <h5>Gamzix</h5>
+                            <p class="mdr">19.05 - 27.05</p>
+                            <div class="prize-pool">
+                                <p class="mdr">Prize pool:</p>
+                                <h5>€10,000</h5>
+                            </div>
+                            <a href="javascript:void(0)">Result</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-6 mb-xl-0 mb-4 mt-5">
-          <div class="card bg-transparent shadow-xl">
-            <div class="overflow-hidden position-relative border-radius-xl" style="background-image: url('../assets/img/curved-images/curved14.jpg');">
-              <span class="mask bg-gradient-dark"></span>
-              <div class="card-body position-relative z-index-1 p-3">
-                <i class="fas fa-wifi text-white p-2"></i>
-                <div class="d-flex pt-5">
-                  <div class="d-flex">
-                    <div class="me-4">
-                      <h6 class="text-white mb-0">Ludo Classic</h6>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="single-box">
+                        <div class="img-area">
+                            <img src="assets/images/finished-tournaments-img-2.png" alt="image">
+                            <div class="abs-area">
+                                <span class="mdr">Finished</span>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <h5>Gamzix</h5>
+                            <p class="mdr">19.05 - 27.05</p>
+                            <div class="prize-pool">
+                                <p class="mdr">Prize pool:</p>
+                                <h5>€10,000</h5>
+                            </div>
+                            <a href="javascript:void(0)">Result</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-6 mb-xl-0 mb-4 mt-5">
-          <div class="card bg-transparent shadow-xl">
-            <div class="overflow-hidden position-relative border-radius-xl" style="background-image: url('../assets/img/curved-images/curved14.jpg');">
-              <span class="mask bg-gradient-dark"></span>
-              <div class="card-body position-relative z-index-1 p-3">
-                <i class="fas fa-wifi text-white p-2"></i>
-                <div class="d-flex pt-5">
-                  <div class="d-flex">
-                    <div class="me-4">
-                      <h6 class="text-white mb-0">Ludo Classic</h6>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="single-box">
+                        <div class="img-area">
+                            <img src="assets/images/finished-tournaments-img-3.png" alt="image">
+                            <div class="abs-area">
+                                <span class="mdr">Finished</span>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <h5>Gamzix</h5>
+                            <p class="mdr">19.05 - 27.05</p>
+                            <div class="prize-pool">
+                                <p class="mdr">Prize pool:</p>
+                                <h5>€10,000</h5>
+                            </div>
+                            <a href="javascript:void(0)">Result</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="single-box">
+                        <div class="img-area">
+                            <img src="assets/images/finished-tournaments-img-4.png" alt="image">
+                            <div class="abs-area">
+                                <span class="mdr">Finished</span>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <h5>Gamzix</h5>
+                            <p class="mdr">19.05 - 27.05</p>
+                            <div class="prize-pool">
+                                <p class="mdr">Prize pool:</p>
+                                <h5>€10,000</h5>
+                            </div>
+                            <a href="javascript:void(0)">Result</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-
-      </div>
-  </section>
-  
+    </div>
+</section>
   <!-- Footer -->
   
     </div> <!-- // Sidebar -->
@@ -271,7 +275,7 @@
       <span class="mask bg-gradient-dark opacity-6"></span>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-5 text-center mx-auto mb-4">
+          <div class="col-lg-8 text-center mx-auto mb-4">
             <img src="../assets/img/anytimelogo.png" width="200px" height="200px" alt="">
             <h1 class="text-white mb-2 mt-5">Real Game With Real Money!</h1>
             <p class="text-lead text-white mt-6">For best experience, open  AnyTimeLudo.in on  chrome mobile</p>

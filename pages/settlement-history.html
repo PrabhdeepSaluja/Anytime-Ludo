@@ -15,6 +15,7 @@
   <!-- Nucleo Icons -->
   <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-EtOZwN1pPJQ9pNk2qFpqt0pnh/CtWCs7NX5WtAg7YzbuXPbIyF/gfB4UCjCmO3Y+" crossorigin="anonymous">
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
@@ -35,76 +36,86 @@
  
   <div class="main">
     <div class="side-bar">
-    <div class="humberger__menu__overlay"></div>
-    <div class="humberger__menu__wrapper">
-        <div class="humberger__menu__logo">
-            <a href="./index.html"><img src="img/humberger/humberger-logo.png" alt=""></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Win Cash</a></li>
-            <li><a href="./wallet.html">My Wallet</a></li>
-            <li><a href="./battle-result.html">Games History</a></li>
-            <li><a href="./battle-list.html">Our Battles</a></li>
-            <li><a href="./wallet-transaction.html">Transaction History</a></li>
-            <li><a href="./settlement-history.html">Settlement History</a></li>
-            <li><a href="./top-users.html">Top 10 Users</a></li>
-            <li><a href="./refer.html">Refer And Earn</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./support.html">Support</a></li>
-            <li><a href="./sign-in.html">Logout</a></li>
-          </ul>
-        </nav>
-    </div>
-    <!-- Humberger End -->
-
-    <!-- HEADER -->
-    <header class="navigation" style="padding-bottom: 6px;">
-      <div class="container-fluid">
-          <nav class="navbar justify-content-between align-items-center p-0">
-            <div class="logo-block d-flex align-items-center">
-              <!-- Menu Toggler -->
-              <div class="col-lg-2 col-md-1 col-6 order-md-1 order-1">
-                <div class="header__humberger">
-                    <i class="fa fa-bars humberger__open"></i>
-                </div>
-              </div>
-              <a class="navbar-brand p-0 m-0" href="index.php">
-                <picture class="logo">
-                  <img loading="lazy" src="../assets//img/anytimelogo.png" alt="logo" title="logo" height="55" width="55px" />
-                </picture>
-              </a>
-        </div>
-        
-        <!-- Wallet -->
-        <div class="wallet-block">
-          <div class="col-6 text-end">
-            <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Cash</a>
+      <div class="humberger__menu__overlay"></div>
+      <div class="humberger__menu__wrapper">
+          <div class="humberger__menu__logo">
+              <a href="./index.html"><img src="img/humberger/humberger-logo.png" alt=""></a>
           </div>
-
-          <div class="col-6 text-end">
-            <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">Earnings</a>
-          </div>
-        </div>
-
-      </nav>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Win Cash</a></li>
+              <li><a href="./wallet.html">My Wallet</a></li>
+              <li><a href="./battle-result.html">Games History</a></li>
+              <li><a href="./battle-list.html">Our Battles</a></li>
+              <li><a href="./wallet-transaction.html">Transaction History</a></li>
+              <li><a href="./settlement-history.html">Settlement History</a></li>
+              <li><a href="./top-users.html">Top 10 Users</a></li>
+              <li><a href="./refer.html">Refer And Earn</a></li>
+              <li><a href="#">Notifications</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./support.html">Support</a></li>
+              <li><a href="./sign-in.html">Logout</a></li>
+            </ul>
+          </nav>
       </div>
-    </header>
+      <!-- Humberger End -->
   
-    <!-- Tab -->
+      <!-- HEADER -->
+      <header class="navigation" style="padding-bottom: 6px;">
+        <div class="container-fluid">
+            <nav class="navbar justify-content-between align-items-center p-0">
+              <div class="logo-block d-flex align-items-center">
+                <!-- Menu Toggler -->
+                <div class="col-lg-2 col-md-1 col-6 order-md-1 order-1">
+                  <div class="header__humberger">
+                      <i class="fa fa-bars humberger__open"></i>
+                  </div>
+                </div>
+                <a class="navbar-brand p-0 m-0" href="index.php">
+                  <picture class="logo">
+                    <img loading="lazy" src="../assets//img/anytimelogo.png" alt="logo" title="logo" height="55" width="55px" />
+                  </picture>
+                </a>
+          </div>
+          
+          <!-- Wallet -->
+          <div class="wallet-block">
+            <div class="col-6 text-end">
+              <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;">
+                  <span class="iconify" data-icon="fa-solid:money-bill-wave" style="color: #fff;" data-inline="true"></span> <!-- Money icon -->
+                  Cash $50 <!-- Amount -->
+                  <span class="iconify" data-icon="fa-solid:plus" data-inline="true" style="color: #fff;"></span> <!-- Plus icon -->
+              </a>
+            </div>
+  
+            <div class="col-6 text-end">
+              <a class="dash-btn bg-gradient-dark mb-0" href="javascript:;" style="width: 150px;"> <!-- Adjust width as needed -->
+                <span class="iconify" data-icon="fa-solid:money-bill-wave" style="color: #fff;" data-inline="true"></span> <!-- Money icon -->
+                Earnings $50 <!-- Amount -->
+                <span class="iconify" data-icon="fa-solid:plus" data-inline="true" style="color: #fff;"></span> <!-- Plus icon -->
+              </a>
+            </div>
+          </div>
+  
+        </nav>
+        </div>
+      </header>
+  <!-- Tab -->
   <section class="game-section bg_img" style="background: url(assets/images/game/bg3.jpg);">
     <div class="container mb-4">
-      <h3 class="mb-4 text-center mt-4">Battle Result</h3>
+      <h3 class="mb-4 text-center mt-4">Settlement History</h3>
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6">
             <div class="row justify-content-center g-4">
               <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
                   <!-- <h4 class="text-left">Game Details</h4> -->
                   <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">02/04/2024</p>
-                          <h5 class="title">Won against John</h5>
+                      <div class="dashboard__card-icon" style="height: 50px; width: 50px;">
+                        <i class="fas fa-dollar-sign"></i>
+                      </div>
+                      <div class="dashboard__card-content">
+                        <h5 class="title">John</h5>  
+                        <p class="info">02/04/2024</p>
                       </div>
                       <div>
                         <h4 class="title">+ Rs 500</h4>
@@ -120,12 +131,15 @@
               <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
                   <!-- <h4 class="text-left">Game Details</h4> -->
                   <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                        <p class="info">01/04/2024</p>
-                        <h5 class="title">Lost against Mike</h5>
+                      <div class="dashboard__card-icon" style="height: 50px; width: 50px;">
+                        <i class="fas fa-dollar-sign"></i>
+                      </div>
+                      <div class="dashboard__card-content">
+                        <h5 class="title">John</h5>  
+                        <p class="info">02/04/2024</p>
                       </div>
                       <div>
-                        <h4 class="title">- Rs 500</h4>
+                        <h4 class="title">+ Rs 500</h4>
                       </div>
                   </div>
               </div>
@@ -138,12 +152,15 @@
               <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
                   <!-- <h4 class="text-left">Game Details</h4> -->
                   <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">02/04/2024</p>
-                          <h5 class="title">Lost against Max</h5>
+                      <div class="dashboard__card-icon" style="height: 50px; width: 50px;">
+                        <i class="fas fa-dollar-sign"></i>
+                      </div>
+                      <div class="dashboard__card-content">
+                        <h5 class="title">John</h5>  
+                        <p class="info">02/04/2024</p>
                       </div>
                       <div>
-                        <h4 class="title">- Rs 1000</h4>
+                        <h4 class="title">+ Rs 500</h4>
                       </div>
                   </div>
               </div>
@@ -156,12 +173,15 @@
               <div class="col-lg-12 col-xl-12 col-md-6 col-sm-10">
                   <!-- <h4 class="text-left">Game Details</h4> -->
                   <div class="dashboard__card">
-                      <div class="d-flex flex-column dashboard__card-content">
-                          <p class="info">02/04/2024</p>
-                          <h5 class="title">Won against Ricky</h5>
+                      <div class="dashboard__card-icon" style="height: 50px; width: 50px;">
+                        <i class="fas fa-dollar-sign"></i>
+                      </div>
+                      <div class="dashboard__card-content">
+                        <h5 class="title">John</h5>  
+                        <p class="info">02/04/2024</p>
                       </div>
                       <div>
-                        <h4 class="title">+ Rs 700</h4>
+                        <h4 class="title">+ Rs 500</h4>
                       </div>
                   </div>
               </div>

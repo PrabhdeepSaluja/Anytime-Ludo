@@ -4178,7 +4178,7 @@ div[class*='col']:nth-child(even) > .faq-item {
 }
 
 .btn, .cmn--btn, .video-button, .social-links li a, .dashboard__card, .game-item, .game-item .ball, .continue-button, .testimonial-item, .slick-arrow {
-    box-shadow: -3.828px -3.828px 6px 0px rgba(255, 200, 39, 0.4), 3px 5px 8px 0px rgba(255, 82, 1, 0.2);
+    /* box-shadow: -3.828px -3.828px 6px 0px rgba(255, 200, 39, 0.4), 3px 5px 8px 0px rgba(255, 82, 1, 0.2); */
 }
 
 .with-box-shadow {

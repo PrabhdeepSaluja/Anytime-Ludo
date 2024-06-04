@@ -3041,7 +3041,7 @@ select.form--control option:hover {
 
 @media (max-width: 1399px) {
     .game-item__thumb {
-        height: 130px;
+        height: 70px;
     }
 }
 
